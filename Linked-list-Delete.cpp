@@ -1,4 +1,7 @@
-// LINKED lIST PROGRAMS
+//
+// LINKED lIST PROGRAMS @auther-osDev07
+// this program will add and delete nodes in LL
+//
 
 #include <iostream>
 #include <stdio.h>
@@ -10,6 +13,9 @@ struct node {
     int data;
     struct node *next;
 };
+//
+// create a linked list: insert element at start
+//
 void createLinkedList(struct node **head, int data) {
     struct node *temp = (struct  node *) malloc(sizeof(struct node *));
     
@@ -28,6 +34,9 @@ void createLinkedList(struct node **head, int data) {
     
     
 }
+//
+// create a linked list: insert element at end of LL
+//
 void insertAtEnd(struct node **head, int data) {
     
     struct node *temp = *head;
@@ -45,6 +54,9 @@ void insertAtEnd(struct node **head, int data) {
     newNode->next = NULL;
     
 }
+//
+// create a linked list: insert element after specified node
+//
 void insertAfterNode(struct node **head, int after, int data) {
     struct node *temp = *head;
     
@@ -59,6 +71,12 @@ void insertAfterNode(struct node **head, int after, int data) {
     newNode->data = data;
     temp->next = newNode;
 }
+//
+// Delete linked list: Delete perticular node
+// Handle del from start of LL
+// From end of LL
+// and handle anything in between
+//
 void deleteNode(struct node **head, int data) {
     
     struct node *temp = (*head);
@@ -92,6 +110,9 @@ void deleteNode(struct node **head, int data) {
     // ensure no zombie
     toDel = NULL;
 }
+//
+// Delete whole LL
+//
 void deleteList(struct node **head) {
     
     if ((*head) == NULL) {
