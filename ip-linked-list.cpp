@@ -89,3 +89,15 @@ int main()
     }
  
 }
+
+
+/* ouput from onlinegdb
+
+ V4 linked list data = 10.10.10.1
+ V6 linked list data = FE80:CD00:0:CDE:1257:0:211E:729C
+ V4 linked list data = 200.200.30.10
+ V6 linked list data = 2345:0425:2CA1:0000:0000:0567:5673:23b5
+    
+    ...Program finished with exit code 0
+      Press ENTER to exit console.
+*/
